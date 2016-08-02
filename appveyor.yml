@@ -1,5 +1,5 @@
-environment:
-  matrix:
+#environment:
+#  matrix:
 
 branches:
   only:
@@ -11,9 +11,9 @@ notifications:
     on_build_failure: false
     on_build_status_changed: false
 
-install:
+#install:
 
 build_script:
   - ps: tree C:\mingw-w64
 
-test_script:
+#test_script:
