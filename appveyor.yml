@@ -14,7 +14,10 @@ notifications:
 #install:
 
 build_script:
-  - SET PATH=C:\msys64;%PATH%
+  - ps: ls C:\msys64\mingw32\bin
+  - ps: ls C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin
+  - ps: ls C:\MinGW\bin
+  - SET PATH=C:\msys64\mingw32\bin;%PATH%
   - gcc --version
   - cd r123
   - make
